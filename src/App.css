@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
 .App {
   min-height: 100vh;
   display: flex;
@@ -6,6 +8,279 @@
   justify-content: center;
   background-color: #282c34;
   text-align: center;
+}
+.container {
+  background-color: #182539;
+  width: 90%;
+  height: 90vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  color: #d5d7e3;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.header-button {
+  background: linear-gradient(to bottom right, #af40ff, #5b42f3);
+  border: 0;
+  border-radius: 12px;
+  width: 70%;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.header-button:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(224, 98, 121, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.header-button:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(224, 98, 121, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.content-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-modal {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100px;
+  padding-bottom: 10px;
+}
+
+.form-modal {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dateTime-container {
+  margin-top: 20px;
+}
+
+.titleTask-input {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 2%;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.textTask-input {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 2%;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.buttons-modal {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.btn-cancel {
+  background-color: #ea4c89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 40px;
+  width: 40%;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.btn-success {
+  background-color: #2d4fbf;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  height: 40px;
+  width: 40%;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+.content-title {
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 0;
+}
+
+.filter-input {
+  width: 80%;
+  border-radius: 5px;
+  padding: 1%;
+  border: 0;
+  background-color: #454a54;
+  opacity: 0.8;
+  color: white;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.filter-input:focus {
+  outline: none;
+}
+
+.filter-input::placeholder {
+  color: rgb(200, 188, 188);
+}
+
+.task-container {
+  width: 95%;
+  margin-top: 30px;
+  height: 35vh;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #324665;
+}
+
+.father {
+  width: 200px;
+  height: 30vh;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: all 0.6s ease-in-out;
+  border-radius: 11px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.father > div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.father .front {
+  background-color: #282c34;
+  z-index: 2;
+  backface-visibility: hidden;
+  border-radius: 11px;
+  color: #fff;
+}
+
+.father .back {
+  background-color: #282c34;
+  transform: rotateY(180deg);
+  z-index: 1;
+  backface-visibility: hidden;
+  border-radius: 11px;
+  color: #fff;
+  text-align: center;
+}
+
+.father:hover {
+  transform: rotateY(180deg);
+}
+
+.task-pending {
+  color: #f47d25;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.task-complete {
+  color: #c4d960;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.card-contain {
+  margin-top: 50px;
+}
+
+.footer {
+  position: absolute;
+  left: auto;
+  bottom: 0;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.footer-icons {
+  color: #c4d960;
+  size: 20px;
+  cursor: pointer;
+}
+
+.footer-icons:hover {
+  transform: scale(1.2);
 }
 
 .items-container li {
