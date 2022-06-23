@@ -6,6 +6,21 @@ export default function redurer(state, action) {
         items: state.items.concat(action.payload.items),
       };
     }
+
+    case "done_task":
+      console.log(action.idx);
+
+      return {
+        items: state.items.map((t) =>
+          t.idTask === action.idx ? { ...t, completed: !t.completed } : t
+        ),
+      };
+
+    case "delete_task":
+      return {
+        items: state.items.filter((t) => t.idTask !== action.idx),
+      };
+
     default: {
       return state;
     }
