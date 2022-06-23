@@ -64,8 +64,6 @@ function App() {
   const deleteTask = (task) => {
     const idx = task.idTask;
 
-    console.log(idx);
-
     dispatch({
       type: "delete_task",
       idx,
@@ -84,9 +82,7 @@ function App() {
     setFilterData(filteredTask);
   };
 
-  useEffect(() => {
-    console.log(filterData);
-  }, [filterData]);
+  useEffect(() => {}, [filterData]);
 
   return (
     <div className="App">
